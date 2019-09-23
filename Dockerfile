@@ -1,8 +1,9 @@
-# use a node base image
-FROM node:7-onbuild
+# use a node base image and ubuntu as base OS
+FROM ubuntu
+FROM node
 
 # set maintainer
-LABEL maintainer "crudsinfotechng@gmail.com"
+LABEL maintainer "akv.tcs@gmail.com"
 
 # set a health check
 HEALTHCHECK --interval=5s \
